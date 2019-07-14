@@ -1,54 +1,36 @@
-body {
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    background-image: url(../images/crystal-background.jpg);
-    color: #3B3C58;
+
+body{
+    background-image: "assets/images/background-image.jpg"
 }
 
-.box {
-    background:rgba(255,255,255,0.5);
-    border-radius: 25px;
-}
 
-button {
+.crystalButton {
+    width: 200px;
+    height: auto;
+    float: left;
+    border: none;
     background: none;
-    border: none;
+    padding:5px;
+
 }
 
-h1 {
-    font-family: 'Leckerli One';
-    font-weight: bold;
-    font-size: 48px;
-    color: mediumturquoise;
-}
 
-h3, h4 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: #456973;
-}
+/* footer */
 
-span {
-    color: #e95376;
-}
+footer {
+    background: #666666;
+    color: #fff;
+    padding: 0;
+    clear: both;
+  /*  border-top: 8px solid #4aaaa5; */
+    color: #cccccc;
+    font-size: 12px;
+    text-align: center;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    
+  }
 
-.instructions {
-    text-align: left;
-}
-
-.footer {
-  margin-top: 50px;
-  padding-top: 19px;
-  text-align: center;
-  padding: 30px;
-}
-
-.modal{
-    visibility: hidden;
-}
-
-.btn-success {
-    padding: 20px;
-    border: none;
-}

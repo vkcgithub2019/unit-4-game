@@ -14,14 +14,99 @@
 </head>
 
 <body>
-    
-    <footer class="footer fixed-bottom">
-       <p> copyright 2019 Victor Chung</p>
-    </footer>
+        
+
+
+
+
+
+
+
+
+<div class="container">
+      <img src= "assets/images/background-image.jpg">
+    <div class="row">
+        <div class = "row"></div>
+    </div>
+<h1>Crystal Collection Game</h1>
+<h2>Let the game begins!!!</h2>
+<br>
+<h3>How to play the game</h3>
+<p>Please click on any of the 4 crystals to gather points to match the given number (Your number)</p>
+<p>If you can match the given number, you win!</p>
+<p>If your points go over the given number, you lose!</p>
+<br>
+<br>
+<br>
+
+<!--creating buttons from bootstrap   -->
+<!--slot for computer generated random number for the player to match-->
+<button type="button" class="btn btn-primary">Your number</button>
+
+<!--slot for displaying player's number of wins-->
+<button type="button" class="btn btn-primary">Wins</button>
+
+<!--slot for displaying player's number of losses-->
+<button type="button" class="btn btn-primary">Loses</button>
+<!--button to restart the game-->
+<button type="button" class="crystals">Starts Over</button>
+
+<br>
+<br>
+<br>
+
+<!--4 crystal buttons and getting pictures of the crystals-->
+<div class="row">
+        <div class="col-md-3 crystal">
+            <button class='crystalButton' id='button1'>
+                <img src="assets/images/amethyst.jpg" alt="amethyst">
+            </button>
+        </div>
+        <div class="col-md-3 crystal">
+            <button class='crystalButton' id='button2'>
+                <img src="assets/images/ruby.jpg" alt="ruby">
+            </button>
+        </div>
+        <div class="col-md-3 crystal">
+            <button class='crystalButton' id='button3'>
+                <img src="assets/images/diamond.jpg" alt="diamond">
+            </button>
+        </div>
+        <div class="col-md-3 crystal">
+            <button class='crystalButton' id='button4'>
+                <img src="assets/images/emerald.jpg" alt="emeralds">
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--setting a fixed footer with copyright message-->
+
+<footer> 
+        <div class="container">
+          &copy; Copyright 2019 Victor Chung
+        </div>
+</footer>
     
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
     <script src="assets/javascript/game.js"></script>
-    
+</div>
 </body>
 </html>
+
+//
