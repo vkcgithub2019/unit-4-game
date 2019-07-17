@@ -1,6 +1,5 @@
 body {
   background-color: rgb(lightgray);
-
 }
 
 h1 {
@@ -23,7 +22,6 @@ p {
 }
 
 #scoreTarget {
-
   text-align: center;
 }
 
@@ -32,21 +30,12 @@ p {
 }
 
 #wins {
-
   text-align:center;
 }
 
 #losses {
-
   text-align:center;
 }
-footer {
-position: fixed;
-text-align: center;
-clear: both;
-
-}
-
 
 .container {
   width: 100%;
@@ -54,7 +43,22 @@ clear: both;
   margin: 0 auto;
   clear: both;
 }
-
+footer {
+  background: #666666;
+  color: #fff;
+  padding: 0;
+  clear: both;
+  border-top: 8px solid #4aaaa5;
+  color: #cccccc;
+  font-size: 12px;
+  text-align: center;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  
+}
 
 .modal{
   visibility: hidden;

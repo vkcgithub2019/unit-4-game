@@ -6,7 +6,7 @@ var yourNumber = 0;
 var crystalBtn = $('.crystalButton');
 
 //Start Game Function
-function startGame (){
+function beginGame (){
     currentScore = 0;
     $('#scoreBox').text(currentScore);
 
@@ -34,7 +34,7 @@ function startGame (){
 
         $('#crystal4').attr('value', buttonValues[3]);        
 }
-startGame();
+beginGame();
 
 //Play Game Function
 var playGame = function(){
@@ -69,4 +69,4 @@ var playGame = function(){
 $('.crystalButton').on('click', playGame);
 
 //event listener to restart game once the modal button is clicked 
-$('.btn-success').on('click', startGame);
+$('.btn-success').on('click', beginGame);
