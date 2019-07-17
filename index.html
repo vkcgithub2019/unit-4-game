@@ -1,112 +1,119 @@
-    
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     
-    <title>Crystal Collection Game</title>
+    <title>Crystal Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" https= "fonts.google.com/specimen/Bahianita">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Poppins"/>
-    <link rel="stylesheet" href=" https://fonts.google.com/specimen/Leckerli+One"/>
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Poppins"/>-->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 
 <body>
+         
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1>Crystal Collector Game</h1></div>
+        </div>
         
+        <!--game info, how to play-->
+        <div class="row">
+            <div class="col-md-12 instructions box">
+                <h3>Lets Play!!</h3>
+                <p>To start, press any of the crystals</p>
+                <p>You have to match the number given to you</p>
+                <p>You win if you can match the number</p>
+                <p>You lose if your total points went over the number to match</p>
+            </div>
+        </div>
+    
+        <!--score display-->
+        <div class="row box">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Number to match:</h4>
+                        <div id="scoreTarget"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Your Score: </h4>
+                        <div id="scoreBox">0</div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Wins: </h4>
+                        <div id="wins"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Losses: </h4> 
+                        <div id="losses">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
 
+        <!--images of the 4 crystals-->
+        <div class="row">
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='crystal1'>
+                    <img src="assets/images/amethyst.jpg" width=100px; height=100px; alt="amethyst">
+                </button>
+            </div>
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='crystal2'>
+                    <img src="assets/images/ruby.jpg" width=100px; height=100px; alt="ruby">
+                </button>
+            </div>
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='crystal3'>
+                    <img src="assets/images/diamond.jpg" width=100px; height=100px; alt="diamond">
+                </button>
+            </div>
+            <div class="col-md-3 crystal">
+                <button class='crystalButton' id='crystal4'>
+                    <img src="assets/images/emerald.jpg" width=100px; height=100px; alt="emerald">
+                </button>
+            </div>
+        </div>
 
-
-
-
-
-
-
-<div class="container">
-      <img src= "assets/images/background-image.jpg">
-    <div class="row">
-        <div class = "row"></div>
+    <!--trigger modal ,alert player to replay again, game reset-->
+    <div class="modal alert row text-center">
+        <h3 id="winloss"></h3>
+        <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal">Play Again</a>
     </div>
-<h1>Crystal Collection Game</h1>
-<h2>Let the game begins!!!</h2>
-<br>
-<h3>How to play the game</h3>
-<p>Please click on any of the 4 crystals to gather points to match the given number (Your number)</p>
-<p>If you can match the given number, you win!</p>
-<p>If your points go over the given number, you lose!</p>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-<!--creating buttons from bootstrap   -->
-<!--slot for computer generated random number for the player to match-->
-<button type="button" class="btn btn-primary">Your number</button>
-
-<!--slot for displaying player's number of wins-->
-<button type="button" class="btn btn-primary">Wins</button>
-
-<!--slot for displaying player's number of losses-->
-<button type="button" class="btn btn-primary">Loses</button>
-<!--button to restart the game-->
-<button type="button" class="crystals">Starts Over</button>
-
-<br>
-<br>
-<br>
-
-<!--4 crystal buttons and getting pictures of the crystals-->
-<div class="row">
-        <div class="col-md-3 crystal">
-            <button class='crystalButton' id='button1'>
-                <img src="assets/images/amethyst.jpg" alt="amethyst">
-            </button>
-        </div>
-        <div class="col-md-3 crystal">
-            <button class='crystalButton' id='button2'>
-                <img src="assets/images/ruby.jpg" alt="ruby">
-            </button>
-        </div>
-        <div class="col-md-3 crystal">
-            <button class='crystalButton' id='button3'>
-                <img src="assets/images/diamond.jpg" alt="diamond">
-            </button>
-        </div>
-        <div class="col-md-3 crystal">
-            <button class='crystalButton' id='button4'>
-                <img src="assets/images/emerald.jpg" alt="emeralds">
-            </button>
-        </div>
-    </div>
-
-
-
-
-
-
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<!--setting a fixed footer with copyright message-->
-
-<footer> 
-        <div class="container">
+    <footer> 
+        <div id= footer>
           &copy; Copyright 2019 Victor Chung
         </div>
-</footer>
-    
+      </footer>
+    </div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
-    <script src="assets/javascript/game.js"></script>
-</div>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+     <script src="assets/javascript/game.js"></script>
+     
+ </body>
+ </html>
+
+
 </body>
 </html>
-
-//

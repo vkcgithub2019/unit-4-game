@@ -1,36 +1,69 @@
-
-body{
-    background-image: "assets/images/background-image.jpg"
-}
-
-
-.crystalButton {
-    width: 200px;
-    height: auto;
-    float: left;
-    border: none;
-    background: none;
-    padding:5px;
+body {
+  background-color: rgb(lightgray);
 
 }
 
+h1 {
+  font-family: 'Times New Romans', sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  color: #e95376;
+  text-align: center;
+}
 
-/* footer */
+h3, h4 {
+  font-family: 'Times New Romans', sans-serif;
+  font-weight: bold;
+  color:black;
+  text-align: center;
+}
 
+p {
+  text-align: center;
+}
+
+#scoreTarget {
+
+  text-align: center;
+}
+
+#scoreBox {
+  text-align:center;
+}
+
+#wins {
+
+  text-align:center;
+}
+
+#losses {
+
+  text-align:center;
+}
 footer {
-    background: #666666;
-    color: #fff;
-    padding: 0;
-    clear: both;
-  /*  border-top: 8px solid #4aaaa5; */
-    color: #cccccc;
-    font-size: 12px;
-    text-align: center;
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    margin: auto;
-    
-  }
+position: fixed;
+text-align: center;
+clear: both;
 
+}
+
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+
+.modal{
+  visibility: hidden;
+}
+
+.btn-success {
+  padding: 20px;
+  border: none;
+}
+.crystalButton {
+  display: flex;
+}
