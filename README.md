@@ -1,2 +1,6 @@
 # unit-4-game
 This is a crystal collection game app. At the start of the game, the computer will randomly assign a number and the player have to match this number by clicking on the 4 crystals to gather points. The points in each crystal is randomly assigned during each game and are hidden from the player. The assigned value of each crystal can only be revealed when the player clicks on it. If the total points gathered by clicking on the crystals match the given number,the player wins. If the total points gathered is over the given number the player lose. The win counter will increase each time there is a win and the loss counter will increase each time the player lose. The random number , which is the number for the player to match could be from 19 to 120. The random numbers assigned to each of the 4 crystals could be from 1 to 12. Once there is a win or a lost, the game will reset, new random number for the player generated and new hidden value assigned to each of the 4 crystals without refreshing the page. 
+
+
+This is the link to the deployed project:
+https://vkcgithub2019.github.io/unit-4-game/
